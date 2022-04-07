@@ -11,30 +11,71 @@
         box-sizing: border-box;
         font-family: 'Kumbh Sans', sans-serif;
         font-family: 'Quicksand', sans-serif;
-       /* background: var(--Dark-cyan);-*/
+       
+    }
+    body{
+        background: var(--Dark-cyan);
+        height: 100vh;
+        background-image: url(./assets/bg-pattern-bottom.svg);
+        background-position: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .profile-card{
         border-radius: 8px;
-        width: 84%;
+        width: 85%;
         margin: 0 auto;
+        background-color: #ffffff;
+        overflow: hidden;
     }
     .profile-card-top{
         background-image: url(./assets/bg-pattern-card.svg);
+        height: 120px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+   
     }
     .profile-card-top img{
         border-radius: 50%;
         border: 5px solid white;
-
+        position: absolute;
+        bottom: -53px;
     }
+    .profile-card-bottom_datos-profile > div{
+        height:  120px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .profile-card-bottom_datos-profile > div span :nth-child(1){
+        font-size: var(--Name-stats-Font-size);
+        font-weight:  700;
+        margin-right: 8px;
+    }
+    
+    .profile-card-bottom_datos-profile > div span :nth-child(2){
+        font-size: var(--Name-stats-Font-size);
+        font-weight: 400;
+        color: var(--Dark-gray);
+    }
+    .profile-card-bottom_datos-profile p{
+        text-align: center;
+        color: var(--Dark-gray);
+        font-size: 14px;
+    }
+
     .profile-card-bottom_datos-seguidores{
         display: flex;
         justify-content: space-around;
-        border-top: 1px solid var(--Dark-grayish-blue);
+        border-top: 1px solid var(--Dark-gray);
         
     }
     .profile-card-bottom_datos-seguidores div p:nth-child(1){
         font-size: var(--Name-stats-Font-size);
-        font-size: 700;
+        font-weight:  700;
         text-align: center;
 
     }
